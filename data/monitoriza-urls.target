@@ -1,0 +1,6 @@
+[Unit]
+Description=Check all Urls
+Wants=monitoriza-url@https:--www.google.es.service monitoriza-url@https:--es.yahoo.com.service monitoriza-url@https:--duckduckgo.com.service
+
+[Install]
+WantedBy=default.target

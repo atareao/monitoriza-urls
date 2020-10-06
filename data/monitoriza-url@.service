@@ -1,0 +1,8 @@
+[Unit]
+Description="Testing instance %i"
+PartOf=monitoriza-urls.target
+Restart=always
+
+[Service]
+Type=simple
+ExecStart=/bin/bash %h/.local/bin/monitoriza-url.sh %i
